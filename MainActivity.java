@@ -226,10 +226,12 @@
             return rootView;
         }
     }
-
         //button for the light
         public void lightbutton(View view) {
-        Log.d("VIVZ","Hello Light");
+            Log.d("VIVZ","Light");
+            //camera used is a GoPro
+            Intent launchIntent = getPackageManager().getLaunchIntentForPackage("com.gopro.smarty");
+            startActivity(launchIntent);
         }
 
         //recorder button
